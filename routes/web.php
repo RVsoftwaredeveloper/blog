@@ -48,7 +48,7 @@ Route::post('delete-product', [ProductController::class, 'destroy']);
 Route::get("relation",[AjaxBOOKCRUDController::class,'relation']);
 Route::get('register', [RegisterController::class, 'register']);
 Route::post('register', [RegisterController::class, 'store'])->name('register');
-Route::get('login', [LoginController::class, 'login']);
+Route::get('login', [LoginController::class, 'login'])->name('showLoginPage');
 Route::post('login', [LoginController::class, 'store'])->name('login');
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('home', [LoginController::class, 'home'])->name('home');
